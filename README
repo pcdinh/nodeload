@@ -1,0 +1,17 @@
+A simple load balancer in node.js
+
+
+Start testservers in seperate shells:
+
+node testserver 8200
+node testserver 8300
+                
+
+Start load balancer:
+
+node balancer.js     
+
+
+Request to balancer:
+
+curl http://127.0.0.1:8888
